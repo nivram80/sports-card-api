@@ -5,8 +5,8 @@ Rails API with PostgreSQL database
 # Getting started
 
 ## Create Rails API and Database
-1. `rails-api new cards-api --database=postgresql`
-1. `cd cards-api`
+1. `rails new sports-cards-api --database=postgresql`
+1. `cd sports-cards-api`
 1. `rails g model player fname lname hall_of_fame:boolean`
 1. Add necessary null and defaults to the migration file:
   ```ruby

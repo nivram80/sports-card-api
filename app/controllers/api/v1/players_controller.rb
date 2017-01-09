@@ -4,7 +4,7 @@ module Api
       include ActionController::HttpAuthentication::Token::ControllerMethods
       include ActionController::ImplicitRender
 
-      before_filter :restrict_access
+      before_action :restrict_access
       respond_to :json
 
       def index
@@ -31,7 +31,7 @@ module Api
             format.json { render :json => @player }
           end
         end
-          end
+      end
 
       def destroy
         respond_with(Player.destroy(params[:id]))
