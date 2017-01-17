@@ -39,7 +39,7 @@ module Api
 
   private
       def players_params
-        params.require(:player).permit(:fname, :lname, :hall_of_fame)
+        params.permit(:fname, :lname, :hall_of_fame)
       end
 
       def restrict_access
