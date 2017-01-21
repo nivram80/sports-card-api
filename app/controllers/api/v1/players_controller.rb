@@ -8,7 +8,7 @@ module Api
       respond_to :json
 
       def index
-        respond_with(Player.all.order("created_at DESC"))
+        respond_with(Player.all.order("lname"))
       end
 
       def show
