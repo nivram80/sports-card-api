@@ -27,6 +27,12 @@ ActiveRecord::Schema.define(version: 20170514194822) do
     t.datetime "updated_at", null: false
   end
 
+  create_table "conditions", force: :cascade do |t|
+    t.string   "grade",      null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
   create_table "players", force: :cascade do |t|
     t.string   "fname",                        null: false
     t.string   "lname",                        null: false

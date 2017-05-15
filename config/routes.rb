@@ -5,6 +5,7 @@ Rails.application.routes.draw do
       resources :players
       resources :companies
       resources :sports
+      resources :conditions
     end
   end
 
