@@ -7,6 +7,7 @@ Rails.application.routes.draw do
       resources :sports
       resources :conditions
       resources :teams
+      resources :cards
     end
   end
 
